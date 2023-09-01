@@ -16,6 +16,12 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
     <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
@@ -42,7 +48,6 @@
                 alt=""
                 class="logo"
               />
-              <h1 class="site-title">True Power of Grace Ministry</h1>
             </a>
 
             <!-- Default snippet for navigation -->
@@ -323,14 +328,11 @@
           <div class="container">
             <div class="row">
               <div class="col-md-5">
-                <h3 class="section-title">Radio Programs</h3>
+                <h3 class="section-title for--all">Radio Programs</h3>
                 <ul class="seremon-list">
                   <li>
                     <h3 class="seremon-title">
-                      <a href="#"
-                        >THE EFFECTS OF SOUL TIE IN THE LIFE OF MARRIED &
-                        UNMARRIED PARTNERS</a
-                      >
+                      <a href="#">The Effects Of Soul Tie In Partners</a>
                     </h3>
                     <div class="seremon-meta">
                       <span
@@ -345,7 +347,7 @@
                     <iframe
                       src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2FTruepowerofgrace%2Fvideos%2F1394584894730505%2F&show_text=false&width=560&t=0"
                       width="450"
-                      height="260"
+                      height="250"
                       style="border: none; overflow: hidden"
                       scrolling="no"
                       frameborder="0"
@@ -371,7 +373,7 @@
                     <iframe
                       src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2FTruepowerofgrace%2Fvideos%2F755164716219810%2F&show_text=false&width=560&t=0"
                       width="450"
-                      height="280"
+                      height="250"
                       style="border: none; overflow: hidden"
                       scrolling="no"
                       frameborder="0"
@@ -397,7 +399,7 @@
                     <iframe
                       src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2FTruepowerofgrace%2Fposts%2Fpfbid0j5gMFiorKe6ti2H45KAisEzAJyPKAouTVS3PauayK5Wz28GHuNGScNUSEYS3UDvUl&show_text=true&width=500"
                       width="450"
-                      height="280"
+                      height="250"
                       style="border: none; overflow: hidden"
                       scrolling="no"
                       frameborder="0"
@@ -435,14 +437,11 @@
                 </ul>
               </div>
               <div class="col-md-5 col-md-offset-2">
-                <h3 class="section-title">Latest sermons</h3>
+                <h3 class="section-title for--all">Latest sermons</h3>
                 <ul class="seremon-list">
                   <li>
                     <h3 class="seremon-title">
-                      <a href="#"
-                        >Be Humble | An Advise to any Pastor's Wife in the
-                        World</a
-                      >
+                      <a href="#">Be Humble| Advice | Pastor's Wife</a>
                     </h3>
                     <div class="seremon-meta">
                       <span
@@ -456,7 +455,7 @@
                     </div>
                     <iframe
                       width="450"
-                      height="280"
+                      height="250"
                       src="https://www.youtube.com/embed/DwaC6ufOJks"
                       title="YouTube video player"
                       frameborder="0"
@@ -466,7 +465,7 @@
                   </li>
                   <li>
                     <h3 class="seremon-title">
-                      <a href="#">SOUL TIES BREAKS MARRIAGE EASILY - PART 3 </a>
+                      <a href="#">SOUL TIES AND MARRIAGES - 3 </a>
                     </h3>
                     <div class="seremon-meta">
                       <span
@@ -480,7 +479,7 @@
                     </div>
                     <iframe
                       width="450"
-                      height="280"
+                      height="250"
                       src="https://www.youtube.com/embed/_0_dJcmGGRA"
                       title="YouTube video player"
                       frameborder="0"
@@ -490,10 +489,7 @@
                   </li>
                   <li>
                     <h3 class="seremon-title">
-                      <a href="#"
-                        >JUST LISTEN TO THIS!!! WHAT SOUL TIES CAN DO EPISODE
-                        2</a
-                      >
+                      <a href="#">WHAT SOUL TIES CAN DO EPISODE 2</a>
                     </h3>
                     <div class="seremon-meta">
                       <span
@@ -507,7 +503,7 @@
                     </div>
                     <iframe
                       width="450"
-                      height="260"
+                      height="250"
                       src="https://www.youtube.com/embed/ldHcfDT6_Es"
                       title="YouTube video player"
                       frameborder="0"
@@ -705,11 +701,7 @@
           </div>
         </div>
 
-        <div
-          class="map"
-          data-latitude="5.633925"
-          data-longitude="-0.244143"
-        ></div>
+        <div id="map" style="height: 90vh;"></div>
       </main>
     </div>
 
@@ -717,6 +709,11 @@
     <script
       type="text/javascript"
       src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
     ></script>
     <script src="js/plugins.js"></script>
     <script src="js/app.js"></script>
